@@ -8,6 +8,7 @@ class LogInForm extends React.Component {
             password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemo = this.handleDemo.bind(this);
     }
 
     update(field) {
@@ -46,7 +47,6 @@ class LogInForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     Welcome to Prescloud!
                     <br />
-                    Please {this.props.formType} or {this.props.navLink}
                     {this.renderErrors()}
                     <div className="login-form">
                         <br />

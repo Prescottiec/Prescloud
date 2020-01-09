@@ -41,7 +41,6 @@ class SignUpForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="signup-form-box">
                     Welcome to Prescloud!
                     <br />
-                    Please {this.props.formType} or {this.props.navLink}
                     {this.renderErrors()}
                     <div className="signup-form">
                         <br />
