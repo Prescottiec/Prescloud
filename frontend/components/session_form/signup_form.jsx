@@ -39,8 +39,6 @@ class SignUpForm extends React.Component {
         return (
             <div className="signup-form-container">
                 <form onSubmit={this.handleSubmit} className="signup-form-box">
-                    Welcome to Prescloud!
-                    <br />
                     {this.renderErrors()}
                     <div className="signup-form">
                         <br />
@@ -49,15 +47,16 @@ class SignUpForm extends React.Component {
                                 value={this.state.username}
                                 onChange={this.update('username')}
                                 className="signup-input"
+                                placeholder="Your username"
                             />
                         </label>
-                        <br />
                         <br />
                         <label>Email:
                             <input type="email"
                                 value={this.state.email}
                                 onChange={this.update('email')}
                                 className="signup-input"
+                                placeholder="Your email address"
                             />
                         </label>
                         <br />
@@ -66,6 +65,7 @@ class SignUpForm extends React.Component {
                                 value={this.state.password}
                                 onChange={this.update('password')}
                                 className="signup-input"
+                                placeholder="Your Password"
                             />
                         </label>
                         <br />

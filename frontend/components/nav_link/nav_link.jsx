@@ -1,14 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-
-
-const NavLink = ({ currentUser, logout }) => {
+const NavLink = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
         <nav className="login-signup">
-            <Link to="/login">Login</Link>
+            <button className="login-button" onClick={() => openModal('login')}>Sign in</button>
             &nbsp;or&nbsp;
-      <Link to="/signup">Sign up!</Link>
+            <button className="signup-button" onClick={() => openModal('signup')}>Create account</button>
         </nav>
     );
     const personalNavLink = () => (
@@ -17,7 +14,6 @@ const NavLink = ({ currentUser, logout }) => {
             <button className="header-button" onClick={logout}>Log Out</button>
         </hgroup>
     );
-
     return currentUser ? personalNavLink() : sessionLinks();
 };
 

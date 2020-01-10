@@ -9,7 +9,7 @@
 User.delete_all
 
 User.create!(
-    username: 'Demo User',
+    username: 'Demo_User',
     email: 'demo_user@demo.com',
     password: '123456'
 )

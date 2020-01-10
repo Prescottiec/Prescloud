@@ -25,7 +25,7 @@ class LogInForm extends React.Component {
 
     handleDemo(e) {
         e.preventDefault();
-        const demoUser = { username: 'Demo User', password: '123456'};
+        const demoUser = { username: 'Demo_User', password: '123456'};
         this.props.processForm(demoUser);
     }
 
@@ -45,8 +45,6 @@ class LogInForm extends React.Component {
         return (
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to Prescloud!
-                    <br />
                     {this.renderErrors()}
                     <div className="login-form">
                         <br />
@@ -55,6 +53,7 @@ class LogInForm extends React.Component {
                             value={this.state.username}
                             onChange={this.update('username')}
                             className="login-input"
+                            placeholder="Your username"
                             />
                         </label>
                         <br />
@@ -63,6 +62,7 @@ class LogInForm extends React.Component {
                             value={this.state.password}
                             onChange={this.update('password')}
                             className="login-input"
+                            placeholder="Your Password"
                             />
                         </label>
                         <br />
