@@ -17,15 +17,10 @@ const App = () => (
     <div>
         <Modal />
         <header>
-            {/* <Link to="/" className="header-link"> */}
-                <h1>Prescloud</h1>
-            {/* </Link> */}
-            <NavLinkContainer />
+            <div className="header">
+                <NavLinkContainer />
+            </div>
         </header>
-        <Switch>
-            {/* <AuthRoute exact path="/login" component={LogInFormContainer} />
-            <AuthRoute exact path="/signup" component={SignUpFormContainer} /> */}
-        </Switch>
     </div>
 );
 
