@@ -1,6 +1,11 @@
 import React from 'react';
 
-const NavLink = ({ currentUser, logout, openModal }) => {
+const NavLink = ({ currentUser, logout, openModal, clearErrors }) => {
+    const errorsClear = (action) => {
+        clearErrors();
+        openModal(action);
+    }
+
     const sessionLinks = () => (
         <div className="splash-page">
             <nav className="nav-bar">
@@ -10,8 +15,8 @@ const NavLink = ({ currentUser, logout, openModal }) => {
                 </div>
 
                 <div className="user-auth">
-                    <button className="login-button" onClick={() => openModal('login')}>Sign in</button>
-                    <button className="signup-button" onClick={() => openModal('signup')}>Create account</button>
+                    <button className="login-button" onClick={() => errorsClear('login')}>Sign in</button>
+                    <button className="signup-button" onClick={() => errorsClear('signup')}>Create account</button>
                 </div>
             </nav>
             <div className="hero-image">
@@ -22,6 +27,8 @@ const NavLink = ({ currentUser, logout, openModal }) => {
             </div>
         </div>
     );
+
+
     const personalNavLink = () => (
         <hgroup className="header-group">
             <h2 className="header-name">Hi, {currentUser.username}!</h2>
