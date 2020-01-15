@@ -1,0 +1,93 @@
+.signup-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.signup-form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.user-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.signup-form-username {
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
+    width: 80%;
+}
+
+.signup-form-email {
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
+    width: 80%;
+}
+
+.signup-form-password {
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
+    width: 80%;
+}
+
+.signup-input {
+    width: 100%;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    font-family: Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma,sans-serif;
+    border: 1px solid;
+    border-color: gainsboro;
+    line-height: 2.5;
+    font-size: 15px;
+}
+
+.signup-form-errors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.signup-form-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.signup-errors {
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
+}
+
+.signup-submit {
+    color: white;
+    background-color: #f50;
+    border-radius: 3px;
+    border-color: #f50;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+}

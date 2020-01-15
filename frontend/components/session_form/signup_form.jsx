@@ -39,38 +39,45 @@ class SignUpForm extends React.Component {
         return (
             <div className="signup-form-container">
                 <form onSubmit={this.handleSubmit} className="signup-form-box">
-                    Welcome to Prescloud!
-                    <br />
-                    {this.renderErrors()}
+
                     <div className="signup-form">
                         <br />
-                        <label>Username:
-                            <input type="text"
-                                value={this.state.username}
-                                onChange={this.update('username')}
-                                className="signup-input"
-                            />
-                        </label>
+
+                        <div className="user-signup">
+                            <label className="signup-form-username">Username
+                                <input type="text"
+                                    value={this.state.username}
+                                    onChange={this.update('username')}
+                                    className="signup-input"
+                                />
+                            </label>
+                            <br />
+                            <label className="signup-form-email">Email
+                                <input type="email"
+                                    value={this.state.email}
+                                    onChange={this.update('email')}
+                                    className="signup-input"
+                                />
+                            </label>
+                            <br />
+                            <label className="signup-form-password">Password
+                                <input type="password"
+                                    value={this.state.password}
+                                    onChange={this.update('password')}
+                                    className="signup-input"
+                                />
+                            </label>
+                            <div className="signup-form-errors">
+                                {this.renderErrors()}
+                            </div>
+                        </div>
+
                         <br />
-                        <br />
-                        <label>Email:
-                            <input type="email"
-                                value={this.state.email}
-                                onChange={this.update('email')}
-                                className="signup-input"
-                            />
-                        </label>
-                        <br />
-                        <label>Password:
-                            <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                className="signup-input"
-                            />
-                        </label>
-                        <br />
-                        <input className="signup-submit" type="submit" value={this.props.formType} />
+                        <div className="signup-form-buttons">
+                            <input className="signup-submit" type="submit" value={this.props.formType} />
+                        </div>
                     </div>
+
                 </form>
             </div>
         );
