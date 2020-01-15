@@ -15,16 +15,10 @@ import {
 
 const App = () => (
     <div>
+        <NavLinkContainer />
         <Modal />
-        <header>
-            {/* <Link to="/" className="header-link"> */}
-                <h1>Prescloud</h1>
-            {/* </Link> */}
-            <NavLinkContainer />
-        </header>
+        
         <Switch>
-            {/* <AuthRoute exact path="/login" component={LogInFormContainer} />
-            <AuthRoute exact path="/signup" component={SignUpFormContainer} /> */}
         </Switch>
     </div>
 );

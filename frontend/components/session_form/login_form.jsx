@@ -46,26 +46,29 @@ class LogInForm extends React.Component {
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
                     {this.renderErrors()}
+                    
                     <div className="login-form">
                         <br />
-                        <label>Username:
-                            <input type="text"
-                            value={this.state.username}
-                            onChange={this.update('username')}
-                            className="login-input"
-                            placeholder="Your username"
-                            />
-                        </label>
-                        <br />
-                        <label>Password:
-                            <input type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            className="login-input"
-                            placeholder="Your Password"
-                            />
-                        </label>
-                        <br />
+                        <div className="user-pass">
+                            <label className="login-form-username">Username:
+                                <input type="text"
+                                value={this.state.username}
+                                onChange={this.update('username')}
+                                className="login-input"
+                                placeholder="Your username"
+                                />
+                            </label>
+                            <br />
+                            <label className="login-form-password">Password:
+                                <input type="password"
+                                value={this.state.password}
+                                onChange={this.update('password')}
+                                className="login-input"
+                                placeholder="Your Password"
+                                />
+                            </label>
+                            <br />
+                        </div>
                         <button onClick={this.handleDemo}>Demo User</button>
                         <input className="login-submit" type="submit" value={this.props.formType} />
                     </div>
