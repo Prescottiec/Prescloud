@@ -45,32 +45,37 @@ class LogInForm extends React.Component {
         return (
             <div className="login-form-container">
                 <form onSubmit={this.handleSubmit} className="login-form-box">
-                    {this.renderErrors()}
                     
                     <div className="login-form">
                         <br />
+
                         <div className="user-pass">
-                            <label className="login-form-username">Username:
+                            <label className="login-form-username">Username
                                 <input type="text"
                                 value={this.state.username}
                                 onChange={this.update('username')}
                                 className="login-input"
-                                placeholder="Your username"
                                 />
                             </label>
                             <br />
-                            <label className="login-form-password">Password:
+                            <label className="login-form-password">Password
                                 <input type="password"
                                 value={this.state.password}
                                 onChange={this.update('password')}
                                 className="login-input"
-                                placeholder="Your Password"
                                 />
                             </label>
                             <br />
+                            <div className="login-form-errors">
+                                {this.renderErrors()}
+                            </div>
                         </div>
-                        <button onClick={this.handleDemo}>Demo User</button>
-                        <input className="login-submit" type="submit" value={this.props.formType} />
+
+                        <div className="login-form-buttons">
+                            <input className="login-submit" type="submit" value={this.props.formType} />
+                            <button className="demo-user-button" onClick={this.handleDemo}>Demo User</button>
+                        </div>
+
                     </div>
                 </form>
             </div>
