@@ -15,12 +15,11 @@ import {
 
 const App = () => (
     <div>
+        <NavLinkContainer />
         <Modal />
-        <header>
-            <div className="header">
-                <NavLinkContainer />
-            </div>
-        </header>
+        
+        <Switch>
+        </Switch>
     </div>
 );
 

@@ -4,13 +4,13 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(235, 235, 235, 0.801);
   z-index: 10;
 }
 
 .modal-child {
-  height: 50%;
-  width: 50%;
+  height: 85%;
+  width: 35%;
   position: absolute;
   top: 50%;
   left: 50%;

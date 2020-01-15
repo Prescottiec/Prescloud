@@ -1,0 +1,106 @@
+.hero-image{
+    display: flex;
+    background-image: asset-url("header1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    border-top: 4px solid #f50;
+    border-top-width: 4px;
+    border-top-style: solid;
+    justify-content: center;
+}
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.left-side-nav{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+}
+
+.prescloud-logo{
+    background-image: asset-url("prescloud-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+.prescloud-text{
+    font-weight: 400;
+    padding-top: 18%;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
+}
+
+.user-auth{
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+    margin-top: 2%;
+    margin-right: 4%;
+}
+
+.login-button{
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    font-size: 13px;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+
+    margin-right: 15px;
+
+    height: 100%;
+    width: 100px;
+    line-height: 300%;
+
+    border: 1px solid #e5e5e5;
+}
+
+.signup-button{
+    border-radius: 4px;
+    border-color: #f50;
+    background-color: #f50;
+    color: white;
+    font-size: 13px;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+
+    height: 100%;
+    width: 150px;
+    line-height: 300%;
+    display: inline-block;
+    position: relative;
+}
+
+.hero-img-text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-text-1{
+    margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 100;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.hero-img-text-2{
+    font-size: 18px;
+    max-width: 530px;
+    text-align: center;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+}

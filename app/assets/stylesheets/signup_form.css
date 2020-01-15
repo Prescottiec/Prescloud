@@ -1,13 +1,4 @@
-.login-form-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.login-form-box{
+.signup-form-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,34 +6,48 @@
     height: 100%;
 }
 
-.login-form{
+.signup-form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.user-signup {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-.user-pass {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 10%;
 }
 
-.login-form-username {
+.signup-form-username {
     font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
     width: 80%;
 }
 
-.login-form-password {
+.signup-form-email {
     font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
     width: 80%;
 }
 
-.login-input {
+.signup-form-password {
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
+    width: 80%;
+}
+
+.signup-input {
     width: 100%;
     border-radius: 3px;
     position: relative;
@@ -54,7 +59,16 @@
     font-size: 15px;
 }
 
-.login-form-errors {
+.signup-form-errors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.signup-form-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,15 +77,11 @@
     margin-bottom: 10%;
 }
 
-.login-form-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.signup-errors {
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
 }
 
-.login-submit {
+.signup-submit {
     color: white;
     background-color: #f50;
     border-radius: 3px;
@@ -79,15 +89,5 @@
     font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
     font-size: 20px;
     width: 80%;
-}
-
-.demo-user-button {
-    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda,Verdana, Tahoma, sans-serif;
-    border-radius: 3px;
-    margin-top: 10px;
-    font-size: 20px;
-    background-color: #f50;
-    border-color: #f50;
-    color: white;
-    width: 80%;
+    padding: 10px;
 }
