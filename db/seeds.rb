@@ -9,6 +9,7 @@
 # require 'open-uri'
 
 User.delete_all
+# Track.delete_all
 
 User.create!(
     username: 'Demo_User',
@@ -16,4 +17,6 @@ User.create!(
     password: '123456'
 )
 
-# file = open('https://prescloud-seeds.<your_region>.amazonaws.com/<optional_folder_name>/<some_file>.jpg')
+# demo_track = Track.create(title: "")
+
+# file = open('https://prescloud-seeds.s3-us-west-1.amazonaws.com/album_cover_default.jpg')
