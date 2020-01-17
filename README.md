@@ -1,24 +1,10 @@
-# README
+# Prescloud
+[Live link](https://prescloud.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prescloud is a SoundCloud clone
+Prescloud is a online audio distribution platform and music sharing website that enables its users to upload, promote, and share audio.
 
-Things you may want to cover:
+![Image of Splash Page](https://github.com/Prescottiec/Prescloud/blob/master/app/assets/images/splash-page.png)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Technologies
+* React, Redux, Ruby, Rails, Jquery, PostgreSQL, and AWS S3
