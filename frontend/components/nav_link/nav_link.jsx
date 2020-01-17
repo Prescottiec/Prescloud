@@ -31,8 +31,23 @@ const NavLink = ({ currentUser, logout, openModal, clearErrors }) => {
 
     const personalNavLink = () => (
         <hgroup className="header-group">
-            <h2 className="header-name">Hi, {currentUser.username}!</h2>
-            <button className="header-button" onClick={logout}>Log Out</button>
+            <div className="splash-page">
+                <nav className="nav-bar">
+                    <div className="left-side-nav">
+                        <div className="prescloud-logo"></div>
+                        <h1 className="prescloud-text">PRESCLOUD</h1>
+                    </div>
+
+                    <div className="user-auth">
+                        <button className="logout-button" onClick={logout}>Log Out</button>
+                    </div>
+                </nav>
+                <div className="hero-image">
+                    <div className="hero-img-text">
+                        <h1 className="greeting-text">Hi, {currentUser.username}!</h1>
+                    </div>
+                </div>
+            </div>
         </hgroup>
     );
     return currentUser ? personalNavLink() : sessionLinks();
