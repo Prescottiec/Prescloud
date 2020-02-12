@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# require 'open-uri'
+require 'open-uri'
 
 User.delete_all
-# Track.delete_all
+Track.delete_all
 
 User.create!(
     username: 'Demo_User',
@@ -17,6 +17,9 @@ User.create!(
     password: '123456'
 )
 
-# demo_track = Track.create(title: "")
+track = Track.create(title: "test track", artist_id: 2)
+file = open("https://prescloud-seeds.s3-us-west-1.amazonaws.com/Spongebob+Theme+Song+(WithLyrics).mp3")
+track.track_url.attach(io: file, filename: "Demo.jng")
 
-# file = open('https://prescloud-seeds.s3-us-west-1.amazonaws.com/album_cover_default.jpg')
+file1 = open("https://prescloud-seeds.s3-us-west-1.amazonaws.com/album_cover_default.jpg")
+track.photo_url.attach(io: file1, filename: "Demo.mp3")

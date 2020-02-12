@@ -47,6 +47,10 @@ const NavLink = ({ currentUser, logout, openModal, clearErrors }) => {
                         <h1 className="greeting-text">Hi, {currentUser.username}!</h1>
                     </div>
                 </div>
+
+                <div className="display-tracks">
+                    
+                </div>
             </div>
         </hgroup>
     );
