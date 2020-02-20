@@ -3,8 +3,6 @@ import NavLinkContainer from "./nav_link/nav_link_container";
 import Modal from './modal/modal';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import TrackIndexContainer from '../components/tracks/track_container'
-// import SignUpFormContainer from './session_form/signup_form_container';
-// import LogInFormContainer from './session_form/login_form_container';
 import { Provider } from 'react-redux';
 import {
     Route,
