@@ -10,8 +10,8 @@ class TrackIndex extends React.Component {
     }
 
     render() {
-        if (!this.props.tracks[0]) this.props.tracks[0] = '';
         const { tracks } = this.props;
+        if (!this.props.tracks[0]) this.props.tracks[0] = '';
         return(
             <div>
                 <div>

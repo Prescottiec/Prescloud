@@ -1,31 +1,33 @@
 const path = require("path");
 
+var SRC = path.resolve(__dirname, 'src/main/js');
+
 module.exports = {
-    context: __dirname,
     entry: "./frontend/entry_file.jsx",
     output: {
         path: path.resolve(__dirname, "app", "assets", "javascripts"),
-        filename: "bundle.js"
+        filename: "./bundle.js"
     },
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: [/\.jsx?$/],
                 exclude: /(node_modules)/,
                 use: {
                     loader: "babel-loader",
                     query: {
                         presets: ["@babel/env", "@babel/react"]
                     }
-                }
+                },
             },
             {
                 test: /\.mp3$/,
+                include: SRC,
                 loader: 'file-loader'
             }
         ]
     },
-    devtool: "inline-source-map",
+    devtool: "source-map",
     resolve: {
         extensions: [".js", ".jsx", ".mp3", "*"]
     }
