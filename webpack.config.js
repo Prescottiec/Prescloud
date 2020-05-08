@@ -1,6 +1,6 @@
 const path = require("path");
 
-var SRC = path.resolve(__dirname, 'src/main/js');
+var SRC = path.resolve(__dirname, 'frontend/components/tracks');
 
 module.exports = {
     entry: "./frontend/entry_file.jsx",

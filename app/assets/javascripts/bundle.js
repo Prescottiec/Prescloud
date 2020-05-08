@@ -911,10 +911,12 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 /*!*********************************************!*\
   !*** ./frontend/components/tracks/test.mp3 ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module parse failed: Unexpected character '\u0004' (1:3)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n(Source code omitted for this binary file)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "d049668f7281bca90fb8b361a5c4208a.mp3");
 
 /***/ }),
 
@@ -1035,7 +1037,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _test_mp3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./test.mp3 */ "./frontend/components/tracks/test.mp3");
-/* harmony import */ var _test_mp3__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_test_mp3__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1075,7 +1076,7 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("audio", {
         controls: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-        src: _test_mp3__WEBPACK_IMPORTED_MODULE_1___default.a,
+        src: _test_mp3__WEBPACK_IMPORTED_MODULE_1__["default"],
         type: "audio/mpeg"
       }));
     }
